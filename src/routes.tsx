@@ -5,6 +5,7 @@ import { MdBarChart, MdPerson, MdHome, MdLock, MdOutlineShoppingCart } from 'rea
 import MainDashboard from 'views/admin/default';
 import NFTMarketplace from 'views/admin/marketplace';
 import Profile from 'views/admin/profile';
+import Profile2 from 'views/admin/profile2';
 import DataTables from 'views/admin/dataTables';
 import RTL from 'views/admin/rtl';
 
@@ -40,6 +41,13 @@ const routes = [
 		path: '/profile',
 		icon: <Icon as={MdPerson} width='20px' height='20px' color='inherit' />,
 		component: Profile
+	},
+	{
+		name: 'Profile2',
+		layout: '/admin',
+		path: '/profile2',
+		icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
+		component: Profile2
 	},
 	{
 		name: 'Sign In',
